@@ -1,0 +1,35 @@
+package com.example.audioplayer;
+
+import java.util.ArrayList;
+
+import android.content.Context;
+
+public class SongList {
+	
+	private ArrayList<Songs> mSongTitles;
+	private Context mAppContext;
+	private static SongList sList;
+	private SongList(Context c){
+		mAppContext = c;
+		mSongTitles = new ArrayList<Songs>();
+		
+		for(int i=0; i<3; i++){
+			Songs cat = new Songs();
+			if(i==0) cat.setmSongTitle("Roar-Katy Perry");
+			if(i==1) cat.setmSongTitle("Close your Eyes-Michael Buble");
+			if(i==2) cat.setmSongTitle("Mirrors-Justin Timberlake");		
+			
+			mSongTitles.add(cat);	
+		}
+	}
+	public ArrayList<Songs> getSongTitles(){
+		return mSongTitles;
+	}
+	
+	public static SongList get(Context c) {
+	        if (sList == null) {
+	        	sList = new SongList(c.getApplicationContext());
+	        }
+	        return sList;
+	    }
+}

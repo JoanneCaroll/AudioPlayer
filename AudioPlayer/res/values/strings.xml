@@ -2,7 +2,11 @@
 <resources>
 
     <string name="app_name">AudioPlayer</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="song1">Roar-Katy Perry</string>
+    <string name="song2">Close your eyes- Michael Buble</string>
     <string name="action_settings">Settings</string>
 
 </resources>

@@ -1,0 +1,14 @@
+package com.example.audioplayer;
+
+public class Songs {
+	private String mSongTitle;
+
+	public String getmSongTitle() {
+		return mSongTitle;
+	}
+
+	public void setmSongTitle(String mSongTitle) {
+		this.mSongTitle = mSongTitle;
+	}
+	
+}

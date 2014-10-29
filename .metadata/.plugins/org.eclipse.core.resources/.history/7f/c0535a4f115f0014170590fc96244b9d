@@ -1,0 +1,13 @@
+package com.example.audioplayer;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class SongListActivity extends Activity{
+
+	@Override
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		
+	}
+}
