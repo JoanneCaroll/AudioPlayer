@@ -21,10 +21,10 @@ public class SongListActivity extends Activity{
 			
 			@Override
 			public void onClick(View v) {
-			    Intent intent = new Intent();
-			    intent.putExtra("title", song1.getText().toString());
-			    setResult(RESULT_OK, intent);
-			    finish();
+				Intent i = new Intent(SongListActivity.this, AudioPlayerActivity.class);
+				i.putExtra(AudioPlayerActivity.EXTRA_SONG1, songclicked);
+				startActivity(i);
+				finish();
 			}
 		});
 		
@@ -33,10 +33,10 @@ public class SongListActivity extends Activity{
 			
 			@Override
 			public void onClick(View v) {
-			    Intent intent = new Intent();
-			    intent.putExtra("title", song2.getText().toString());
-			    setResult(RESULT_OK, intent);
-			    finish();
+				Intent i = new Intent(SongListActivity.this, AudioPlayerActivity.class);
+				i.putExtra(AudioPlayerActivity.EXTRA_SONG2, songclicked);
+				startActivity(i);
+				finish();
 			}
 		});
         }

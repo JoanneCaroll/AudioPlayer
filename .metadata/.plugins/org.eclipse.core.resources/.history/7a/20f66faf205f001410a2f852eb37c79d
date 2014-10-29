@@ -24,7 +24,7 @@ public class AudioPlayerActivity extends Activity {
         Log.d(TAG, "OnCreate()");
         songTitle=(TextView)findViewById(R.id.songTitle);
         playButton=(Button)findViewById(R.id.playButton);
-        
+       
         playButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -51,7 +51,16 @@ public class AudioPlayerActivity extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 	  if (data == null) {return;}
 	      String name = data.getStringExtra("title");
-	      songTitle.setText(name);	      
+	      songTitle.setText(name);
+	      if(name=="Roar-Katy Perry")
+	        {
+	        	Toast.makeText(this, "Roar-Katy Perry", Toast.LENGTH_SHORT).show();
+	        }
+	        else if (name=="Close your eyes-Michael Buble")
+	        {
+	        	Toast.makeText(this, "Close your eyes-Michael Buble", Toast.LENGTH_SHORT).show();
+	        }
+	      
     }
     @Override
     public void onStart(){

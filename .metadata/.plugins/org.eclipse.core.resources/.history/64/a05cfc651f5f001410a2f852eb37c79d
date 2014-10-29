@@ -22,7 +22,7 @@ public class SongListActivity extends Activity{
 			@Override
 			public void onClick(View v) {
 			    Intent intent = new Intent();
-			    intent.putExtra("title", song1.getText().toString());
+			    intent.putExtra("name", song1.getText().toString());
 			    setResult(RESULT_OK, intent);
 			    finish();
 			}
@@ -34,7 +34,7 @@ public class SongListActivity extends Activity{
 			@Override
 			public void onClick(View v) {
 			    Intent intent = new Intent();
-			    intent.putExtra("title", song2.getText().toString());
+			    intent.putExtra("name", song2.getText().toString());
 			    setResult(RESULT_OK, intent);
 			    finish();
 			}
